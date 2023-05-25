@@ -1,0 +1,50 @@
+.formAdd {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+.inputAdd {
+  padding: 9px 16px !important;
+  background: white;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  width: fit-content;
+  color: var(--primary-color);
+  font-weight: 600;
+  box-shadow: 0 0 20px var(--shadow);
+}
+.inputAdd::placeholder {
+  font-weight: 600;
+  color: #0069e948;
+  font-size: 12px;
+}
+
+@media (max-width: 480px) {
+  .formAdd {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .inputAdd {
+    padding: 10px 12px !important;
+    width: 100%;
+    font-size: 10px;
+  }
+  .inputAdd::placeholder {
+    font-size: 10px;
+  }
+}
+@media (min-width: 1131px) {
+  .inputAdd {
+    max-width: 400px;
+  }
+}
+@media (max-width: 1130px) {
+  .inputAdd {
+    width: 100%;
+  }
+}

@@ -1,0 +1,143 @@
+.item {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: white;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  padding: 10px 16px;
+  box-shadow: 0 0 20px var(--shadow);
+}
+.todoDetails {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+}
+.todoText {
+  color: var(--primary-color);
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+.time {
+  font-size: 12px;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.733);
+}
+
+.todoText-complete {
+  text-decoration: line-through;
+  opacity: 0.7;
+  color: var(--red-color);
+}
+
+.todoActions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.iconDelete,
+.iconUpdate {
+  font-size: 20px;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: rgba(128, 128, 128, 0.055);
+  color: rgba(0, 0, 0, 0.877);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.iconDelete {
+  color: var(--red-color);
+}
+.iconUpdate {
+  color: var(--primary-color);
+}
+.iconDelete:hover {
+  background-color: rgba(250, 83, 83, 0.103);
+}
+.iconUpdate:hover {
+  background-color: #0073ff13;
+}
+
+/* not found */
+.notFound {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.077);
+  margin-bottom: 10px;
+  border-radius: 8px;
+  padding: 16px 16px;
+  box-shadow: 0 0 20px var(--shadow);
+}
+/* not found */
+
+.svgBox {
+  flex-basis: 24px;
+  flex-shrink: 0;
+  height: 24px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.svgBox svg {
+  width: 100%;
+  height: 100%;
+  stroke: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 480px) {
+  .item {
+    padding: 10px 12px;
+  }
+  .todoDetails {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+  .todoText {
+    font-size: 10px;
+  }
+  .time {
+    font-size: 9px;
+  }
+
+  .todoActions {
+    gap: 8px;
+  }
+  .iconDelete,
+  .iconUpdate {
+    font-size: 16px;
+    padding: 6px;
+  }
+
+  /* not found */
+  .notFound {
+    font-size: 12px;
+  }
+  /* not found */
+
+  .svgBox {
+    flex-basis: 20px;
+    height: 20px;
+  }
+}

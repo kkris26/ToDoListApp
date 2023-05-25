@@ -1,0 +1,38 @@
+.appHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.filterButton {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 480px) {
+  .appHeader {
+    flex-direction: column;
+  }
+  .filterButton {
+    margin-top: 10px !important;
+    width: 100% !important;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px !important;
+  }
+}
+
+@media (max-width: 1130px) {
+  .appHeader {
+    flex-direction: column;
+    width: 100%;
+    gap: 0!important;
+  }
+  .filterButton {
+    margin-top: 20px;
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}

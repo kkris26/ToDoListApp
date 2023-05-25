@@ -1,0 +1,85 @@
+* {
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s ease-in-out;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #0072ff;
+  --red-color: rgb(250, 83, 83);
+  --hover-color: #0059ff;
+  --shadow: #0073ff21;
+}
+.app {
+  min-height: 100vh !important;
+  display: flex;
+  align-items: center;
+}
+.container {
+  width: 1200px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  height: fit-content;
+}
+.app-wrapper {
+  width: 100%;
+  padding: 80px;
+  margin: 0 auto;
+}
+.content-wrapper {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body {
+  background: linear-gradient(to bottom, #0072ff, #0e1838);
+  background-repeat: no-repeat;
+}
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+  }
+  .app-wrapper {
+    width: 100%;
+    padding: 20px !important;
+  }
+  .content-wrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 550px) {
+  .container {
+    width: 90%;
+  }
+  .app-wrapper {
+    width: 100%;
+    padding: 30px !important;
+  }
+}
+
+@media (max-width: 769px) {
+  .container {
+    width: 90%;
+  }
+  .app-wrapper {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 1130px) {
+  .content-wrapper {
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 769px) {
+  .container {
+    max-width: 80%;
+  }
+}

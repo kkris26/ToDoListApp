@@ -1,0 +1,90 @@
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(30px);
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  border-radius: 12px;
+  position: relative;
+  border: 2px solid #0073ff2a;
+  box-shadow: 0 0 20px var(--shadow);
+}
+
+.formTitle {
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.form {
+  width: 100%;
+  margin: auto;
+}
+.form label {
+  font-size: 14px;
+  color: #0073ff8e;
+}
+.form input,
+.formStatus {
+  margin-top: 2px;
+  margin-bottom: 16px;
+  width: 100%;
+  padding: 4px 8px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.05);
+  font-size: 16px;
+  outline: none;
+  border: 2px solid rgba(0, 81, 255, 0.015);
+  color: white;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  gap: 20px;
+}
+
+.formStatus option {
+  color: rgba(0, 0, 0, 0.623);
+  padding: 20px !important;
+}
+
+.formStatus option:hover {
+  background-color: #007bff;
+}
+
+.formStatus option:checked {
+  background-color: #007bff;
+  color: #fff;
+}
+
+@media (min-width: 769px) {
+  .container {
+    max-width: 500px;
+    width: 100%;
+    padding: 40px;
+  }
+  .buttonContainer {
+    gap: 40px;
+  }
+}

@@ -1,0 +1,60 @@
+.button-primary {
+  min-width: fit-content;
+  white-space: nowrap;
+  width: 100%;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 12px;
+  width: fit-content;
+    box-shadow: 0 0 20px var(--shadow);
+}
+.button-primary:hover {
+  background-color: var(--hover-color);
+}
+.button-secondary {
+  min-width: 105px;
+  width: 100%;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  color: var(--primary-color);
+  border: none;
+  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 12px;
+    box-shadow: 0 0 20px var(--shadow);
+}
+.button-secondary:hover {
+  color: white;
+  background-color: var(--primary-color);
+}
+.button-cancel {
+  width: fit-content;
+  border: none;
+  color: white;
+  border: none;
+  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 12px;
+  background-color: rgb(250, 83, 83);
+}
+.button-cancel:hover {
+  background-color: rgb(253, 41, 41);
+}
+
+@media (max-width: 480px) {
+  .button-primary,
+  .button-cancel,
+  .button-secondary {
+    font-size: 10px !important;
+    padding: 10px 16px !important;
+    min-width: 80px !important;
+    width: 100% !important;
+    border-radius: 8px;
+  }
+}
