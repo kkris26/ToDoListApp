@@ -5,6 +5,7 @@ const buttonTypes = {
   primary: "primary",
   secondary: "secondary",
   cancel: "cancel",
+  update: "update",
 };
 
 function getButtonClassName(variant) {

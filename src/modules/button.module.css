@@ -15,8 +15,26 @@
 .button-primary:hover {
   background-color: var(--hover-color);
 }
+.button-update{
+  min-width: fit-content;
+  white-space: nowrap;
+  width: 100%;
+  border: none;
+  background-color: white;
+  color: var(--primary-color);
+  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 12px;
+  width: fit-content;
+    box-shadow: 0 0 20px var(--shadow);
+}
+.button-update:hover {
+  background-color: rgba(0, 0, 0, 0.158);
+  color: white
+}
 .button-secondary {
-  min-width: 105px;
+  min-width: fit-content;
   width: 100%;
   border: none;
   background-color: rgb(255, 255, 255);

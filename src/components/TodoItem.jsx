@@ -26,7 +26,7 @@ function TodoItem({ todo }) {
 
   const handleDelete = () => {
     dispatch(deleteTodo(todo.id));
-    toast.success("todo delte successfully");
+    toast.success("Deleted Successfully");
   };
   const handleUpdate = () => {
     setUpdateModalOpen(true);

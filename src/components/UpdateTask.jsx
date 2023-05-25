@@ -47,26 +47,20 @@ function UpdateTask({ type, modalOpen, setModalOpen, todo }) {
       return;
     }
     if (title && status) {
-      const updatedTime = new Date().toLocaleString();
-      if (
-        todo.title !== title ||
-        todo.status !== status ||
-        todo.time !== updatedTime
-      ) {
+      if (todo.title !== title || todo.status !== status) {
         dispatch(
           updateTodo({
             ...todo,
             title,
             status,
-            time: updatedTime,
           })
         );
-        toast.success("Update Successful");
+        toast.success("Update Successfuly");
       } else {
-        toast.error("No changes made");
+        toast.error("No Changes Made");
       }
-      setModalOpen(false);
     }
+    setModalOpen(false);
   };
 
   return (
@@ -118,7 +112,7 @@ function UpdateTask({ type, modalOpen, setModalOpen, todo }) {
                 </select>
               </label>
               <div className={styles.buttonContainer}>
-                <Button type="submit" variant="primary">
+                <Button type="submit" variant="update">
                   Update Task
                 </Button>
                 <Button
