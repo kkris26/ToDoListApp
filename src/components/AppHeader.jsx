@@ -38,7 +38,11 @@ function AppHeader() {
           Complete
         </Button>
       </div>
-      <UpdateTask type="add" modalOpen={modalOpen} setModalOpen={setModalOpen} />
+      <UpdateTask
+        type="add"
+        modalOpen={modalOpen}
+        setModalOpen={setModalOpen}
+      />
     </div>
   );
 }

@@ -61,9 +61,9 @@ function UpdateTask({ type, modalOpen, setModalOpen, todo }) {
             time: updatedTime,
           })
         );
-        toast.success("Update Successful");
+        toast.success("Update Successfuly");
       } else {
-        toast.error("No changes made");
+        toast.error("No Changes Made");
       }
       setModalOpen(false);
     }
