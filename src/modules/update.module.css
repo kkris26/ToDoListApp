@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(10px);
   z-index: 1000;
   display: flex;
@@ -12,7 +12,7 @@
   align-items: center;
 }
 .container {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(0, 119, 255, 0.521);
   backdrop-filter: blur(30px);
   max-width: 300px;
   width: 100%;
@@ -41,7 +41,7 @@
 }
 .form label {
   font-size: 14px;
-  color: #0073ff8e;
+  color: white;
 }
 .form input,
 .formStatus {
@@ -50,7 +50,7 @@
   width: 100%;
   padding: 4px 8px;
   border-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0.11);
   font-size: 16px;
   outline: none;
   border: 2px solid rgba(0, 81, 255, 0.015);
